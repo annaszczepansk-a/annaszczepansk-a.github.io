@@ -78,7 +78,7 @@
           { src: P + 'canal-filmbox-stream.jpg', alt: 'Plakat FilmBox+ stream — serwis na telewizorze, laptopie i telefonie' }
         ] },
         { type: 'step', n: '', title: 'Landing page dla Zoom TV', paras: ['Landing page programu „Magia nagości. Polska” dla Zoom TV: kampanijny hero, podcasty, opis programu i prowadząca w neonowej identyfikacji kanału.'] },
-        { type: 'image', src: P + 'canal-zoom.jpg', ratio: '598 / 1130', mid: true, alt: 'Zoom TV — landing page programu „Magia nagości. Polska, sezon 5”' },
+        { type: 'scrollshot', src: P + 'canal-zoom-full.jpg', width: 598, alt: 'Zoom TV — landing page programu „Magia nagości. Polska, sezon 5” (cała strona)' },
         { type: 'text', label: 'Efekt', paras: [
           'Praca dla dużej grupy medialnej: wiele marek naraz, międzynarodowe targi i spójność w każdym formacie — od ścianki na stoisko po landing page. Najbardziej rozbudowany projekt z tej pracy to strona FilmBox+.'
         ] },
@@ -877,6 +877,9 @@
       case 'poses':
         // Luna: pozy w stylu sygnetu (linia + różowa kropka-głowa) — SVG z assets/projects/luna-pozy/
         return `<ul class="block poses">${b.items.map(([f, t]) => `<li><img src="${P}luna-pozy/luna-poza-${f}.svg" alt="Piktogram Luna — ${esc(t)}" loading="lazy"><span>${esc(t)}</span></li>`).join('')}</ul>`;
+      case 'scrollshot':
+        // cała strona www w ramce: przewija się sama po najechaniu (desktop), palcem na telefonie; bez powiększania ponad natywną szerokość
+        return `<div class="block ss"><div class="ss__frame" tabindex="0" style="max-width:${b.width || 600}px" aria-label="${esc(b.alt)} — przewiń, aby zobaczyć całą stronę"><img src="${b.src}" alt="${esc(b.alt)}" loading="lazy"></div><p class="ss__hint mono">Najedź, żeby przewinąć stronę</p></div>`;
       case 'lunasys': {
         // Luna: paleta i elementy graficzne złożone w kodzie wg planszy PP Mori (wycinek miał podpisy ~6 px)
         const pal = [['Dusty blue', '#6B8BBE'], ['Blush pink', '#E7A7B1'], ['Nude', '#F3E6E1'], ['Sand', '#C9BCAE'], ['Ink', '#1E1E26']];
@@ -983,6 +986,7 @@
     initHoverVideos(el);
     initMotion(el);
     initLunaMark(el);
+    initScrollShots(el);
     initMore(el);
 
     el.addEventListener('click', e => {
@@ -1083,6 +1087,27 @@
         const was = visible; visible = e.isIntersecting;
         if (visible && !was) { show(0); clearTimeout(timer); timer = setTimeout(tick, 1500); }
       }, { threshold: .5 }).observe(lm);
+    });
+  }
+
+  /* scrollshot: po najechaniu kursorem ramka powoli przewija całą stronę w dół, po zjechaniu wraca do góry */
+  function initScrollShots(root) {
+    root.querySelectorAll('.ss__frame').forEach(f => {
+      let raf = 0, last = 0;
+      const step = t => {
+        const dt = last ? t - last : 16; last = t;
+        f.scrollTop += dt * 0.12;
+        if (f.scrollTop + f.clientHeight < f.scrollHeight - 1) raf = requestAnimationFrame(step);
+      };
+      f.addEventListener('pointerenter', e => {
+        if (e.pointerType !== 'mouse' || reduced.matches) return;
+        last = 0; cancelAnimationFrame(raf); raf = requestAnimationFrame(step);
+      });
+      f.addEventListener('pointerleave', e => {
+        if (e.pointerType !== 'mouse') return;
+        cancelAnimationFrame(raf); f.scrollTo({ top: 0, behavior: reduced.matches ? 'auto' : 'smooth' });
+      });
+      f.addEventListener('wheel', () => cancelAnimationFrame(raf), { passive: true });
     });
   }
 

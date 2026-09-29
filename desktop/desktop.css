@@ -615,3 +615,10 @@ video.shot { cursor: pointer; }
 }
 
 .copy-row { margin-top: 12px; }
+
+/* scrollshot — cała strona www w przewijanej ramce */
+.ss__frame { margin: 0 auto; height: min(640px, 72vh); overflow-y: auto; border-radius: 12px; background: #0b0b2e; box-shadow: 0 18px 50px rgba(40, 26, 30, .18); scrollbar-width: thin; overscroll-behavior: contain; }
+.ss__frame img { display: block; width: 100%; height: auto; }
+.ss__frame:focus-visible { outline: 2px solid var(--orange-text); outline-offset: 4px; }
+.block .ss__hint { text-align: center; margin: 12px 0 0; font-size: 11px; opacity: .5; }
+@media (hover: none) { .block .ss__hint { display: none; } }
