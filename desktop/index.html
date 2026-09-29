@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anna Szczepańska — UX/UI designer</title>
+  <meta name="description" content="Portfolio Anny Szczepańskiej — UX/UI i creative designerki z Polski. Strony www, aplikacje mobilne, interfejsy HMI i design systemy.">
+  <meta property="og:title" content="Anna Szczepańska — UX/UI designer">
+  <meta property="og:description" content="Strony www, aplikacje mobilne, interfejsy HMI i design systemy. Kliknij ikonę, żeby otworzyć projekt.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#F3EFE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/anna-chair.webp">
+  <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+
+  <main class="stage" data-stage>
+
+    <header class="topbar">
+      <span class="topbar__name"><i></i>Anna Szczepańska</span>
+      <span class="topbar__hint">Kliknij ikonę, żeby otworzyć projekt</span>
+      <span class="topbar__clock" data-clock>--:--</span>
+    </header>
+
+    <!-- wielkie imię: pełny kolor pod zdjęciem… -->
+    <div class="hero" aria-hidden="false">
+      <h1 class="hero__anna" data-anna>ANNA</h1>
+      <div class="hero__name" data-name>SZCZEPAŃSKA</div>
+    </div>
+
+    <figure class="figure">
+      <div class="figure__inner">
+        <img src="assets/anna-chair.webp" width="1024" height="1536" alt="Anna Szczepańska na krześle reżyserskim z kubkiem „Good Ideas Only”">
+        <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </figure>
+
+    <!-- …i sam obrys nad zdjęciem -->
+    <div class="hero hero--outline" aria-hidden="true">
+      <div class="hero__anna" data-anna-outline>ANNA</div>
+      <div class="hero__name">SZCZEPAŃSKA</div>
+    </div>
+
+    <div class="stickers" data-stickers aria-hidden="true"></div>
+    <div class="items" data-items></div>
+
+    <nav class="dock" data-dock aria-label="O mnie i kontakt"></nav>
+
+    <div class="wins" data-wins></div>
+  </main>
+
+  <script src="desktop.js"></script>
+</body>
+</html>

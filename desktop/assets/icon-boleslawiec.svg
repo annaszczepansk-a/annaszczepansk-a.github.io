@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- znak Bolesławca („pawie oczko”): pierścień, opuszczony mniejszy pierścień i kropka — proporcje z 02-logo.png -->
+  <circle cx="50.0" cy="50.0" r="36.04" fill="none" stroke="#E8D8CB" stroke-width="7.92"/>
+  <circle cx="50.0" cy="61.84" r="19.00" fill="none" stroke="#E8D8CB" stroke-width="5.44"/>
+  <circle cx="50.0" cy="65.56" r="7.40" fill="#E8D8CB"/>
+</svg>

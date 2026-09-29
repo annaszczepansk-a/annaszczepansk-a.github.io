@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <rect width="1600" height="900" fill="#101217"/>
+
+  <text x="80" y="72" fill="#e0662e" font-size="12" letter-spacing="2.4" font-family="'Space Mono', ui-monospace, Menlo, monospace">MODEL FOKUSU</text>
+  <text x="80" y="106" fill="#f2f4f8" font-size="19" font-weight="500">Jeden mikrofon, dwa cele — decyduje to, gdzie ostatnio kliknęłaś</text>
+
+  <!-- EKRAN DNIA -->
+  <rect x="80" y="180" width="620" height="580" rx="18" fill="#0d0f14" stroke="#ffffff" stroke-opacity=".14"/>
+  <text x="112" y="228" fill="#8a8f9a" font-size="13">22 czerwca</text>
+  <text x="112" y="256" fill="#f2f4f8" font-size="20" font-weight="500">Poniedziałek</text>
+
+  <!-- pole A: notatka dnia -->
+  <rect x="112" y="288" width="556" height="196" rx="10" fill="#e0662e" fill-opacity=".08" stroke="#e0662e" stroke-opacity=".7" stroke-width="1.5"/>
+  <circle cx="140" cy="318" r="13" fill="#e0662e"/>
+  <text x="140" y="323" fill="#101217" font-size="13" font-weight="700" text-anchor="middle">A</text>
+  <text x="166" y="323" fill="#f2f4f8" font-size="15" font-weight="500">Notatka dnia</text>
+  <rect x="140" y="350" width="440" height="7" rx="3.5" fill="#f0a06a" fill-opacity=".5"/>
+  <rect x="140" y="370" width="500" height="7" rx="3.5" fill="#f0a06a" fill-opacity=".35"/>
+  <rect x="140" y="390" width="360" height="7" rx="3.5" fill="#f0a06a" fill-opacity=".25"/>
+  <text x="140" y="440" fill="#8a8f9a" font-size="13">Auto-zapis · 700 ms po ostatnim znaku</text>
+  <text x="140" y="464" fill="#8a8f9a" font-size="13">Klik tutaj → mikrofon dopisuje do wpisu</text>
+
+  <!-- nastroje -->
+  <g>
+    <circle cx="152" cy="524" r="18" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+    <circle cx="200" cy="524" r="18" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+    <circle cx="248" cy="524" r="18" fill="#e0662e" fill-opacity=".22" stroke="#e0662e" stroke-opacity=".7"/>
+    <circle cx="296" cy="524" r="18" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+    <circle cx="344" cy="524" r="18" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="382" y="529" fill="#6f747f" font-size="13">Nastrój dnia</text>
+  </g>
+
+  <!-- pole B: input bar -->
+  <rect x="112" y="640" width="556" height="56" rx="28" fill="#5c9bff" fill-opacity=".00" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <circle cx="146" cy="668" r="13" fill="#ffffff" fill-opacity=".22"/>
+  <text x="146" y="673" fill="#f2f4f8" font-size="13" font-weight="700" text-anchor="middle">B</text>
+  <text x="176" y="673" fill="#8a8f9a" font-size="15">Porozmawiaj z Soną…</text>
+  <circle cx="638" cy="668" r="16" fill="#e0662e"/>
+  <rect x="634" y="661" width="8" height="12" rx="4" fill="#101217"/>
+  <text x="112" y="726" fill="#8a8f9a" font-size="13">Klik tutaj → mikrofon mówi do Sony</text>
+
+  <!-- STRZAŁKI DO OPISÓW -->
+  <g stroke="#e0662e" stroke-opacity=".55" stroke-width="1.5" fill="none">
+    <path d="M668,386 L820,386"/>
+  </g>
+  <path d="M818,380 L818,392 L834,386 Z" fill="#e0662e" fill-opacity=".8"/>
+  <g stroke="#ffffff" stroke-opacity=".28" stroke-width="1.5" fill="none">
+    <path d="M668,668 L820,668"/>
+  </g>
+  <path d="M818,662 L818,674 L834,668 Z" fill="#ffffff" fill-opacity=".4"/>
+
+  <!-- ŚCIEŻKA A -->
+  <rect x="852" y="288" width="668" height="196" rx="14" fill="#e0662e" fill-opacity=".07" stroke="#e0662e" stroke-opacity=".45"/>
+  <text x="884" y="330" fill="#e0662e" font-size="12" letter-spacing="1.6" font-family="'Space Mono', ui-monospace, Menlo, monospace">ŚCIEŻKA A — PISZĘ DZIEŃ</text>
+  <text x="884" y="368" fill="#f2f4f8" font-size="17" font-weight="500">Fokus w notatce</text>
+  <text x="884" y="400" fill="#8a8f9a" font-size="14">Tekst i transkrypcja dopisują się do wpisu dnia.</text>
+  <text x="884" y="424" fill="#8a8f9a" font-size="14">Nic nie leci do modelu — to prywatny zapis,</text>
+  <text x="884" y="448" fill="#8a8f9a" font-size="14">zapisywany prosto do bazy.</text>
+
+  <!-- ŚCIEŻKA B -->
+  <rect x="852" y="564" width="668" height="196" rx="14" fill="#ffffff" fill-opacity=".03" stroke="#ffffff" stroke-opacity=".16"/>
+  <text x="884" y="606" fill="#8a8f9a" font-size="12" letter-spacing="1.6" font-family="'Space Mono', ui-monospace, Menlo, monospace">ŚCIEŻKA B — PYTAM SONĘ</text>
+  <text x="884" y="644" fill="#f2f4f8" font-size="17" font-weight="500">Fokus w pasku rozmowy</text>
+  <text x="884" y="676" fill="#8a8f9a" font-size="14">Wiadomość trafia do wątku tego dnia,</text>
+  <text x="884" y="700" fill="#8a8f9a" font-size="14">a odpowiedź Sony dopisuje się pod nią.</text>
+  <text x="884" y="724" fill="#8a8f9a" font-size="14">Ten sam mikrofon, inny adresat.</text>
+
+  <text x="80" y="826" fill="#6f747f" font-size="12" font-family="'Space Mono', ui-monospace, Menlo, monospace" letter-spacing=".6">BEZ PRZEŁĄCZNIKA I BEZ ZGADYWANIA — MIEJSCE OSTATNIEGO DOTKNIĘCIA JEST CAŁYM INTERFEJSEM WYBORU.</text>
+</svg>

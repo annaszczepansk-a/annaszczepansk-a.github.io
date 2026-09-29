@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- logotyp aplikacji sona: serif jak w apce (Lora), pomarańczowe „o” = akcent #e0662e.
+       Tło przezroczyste — kolor kafla daje `bg` w ITEMS (#16161a). -->
+  <text x="256" y="318" text-anchor="middle" font-family="Lora, Georgia, 'Times New Roman', serif"
+        font-size="176" fill="#f2efe9">s<tspan fill="#e0662e">o</tspan>na</text>
+</svg>

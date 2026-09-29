@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- monogram Luna Pilates Studio: „L” z kropką w okręgu (przerysowany z planszy marki, kolor moon blue) -->
+  <circle cx="250" cy="250" r="196" fill="none" stroke="#36598f" stroke-width="9"/>
+  <path fill="#36598f" d="M176 152 Q176 146 183 146 L201 146 Q213 146 213 160 L213 276 Q215 336 262 354 Q288 363 320 362 L320 368 Q262 372 222 352 Q176 328 176 262 Z"/>
+  <circle cx="300" cy="253" r="23" fill="#36598f"/>
+</svg>

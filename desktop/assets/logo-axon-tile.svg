@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Axon — logo „Sygnał” na ciemnym kaflu (512 × 512) — plik do dopracowania w Figmie / Illustratorze.
+       Kafel: zaokrąglenie 24 % jak ikony na pulpicie, tło #1b2340 → #0b0f1e. -->
+  <defs>
+    <radialGradient id="tile-bg" cx="30%" cy="20%" r="120%">
+      <stop offset="0" stop-color="#1b2340"/>
+      <stop offset="0.7" stop-color="#0b0f1e"/>
+    </radialGradient>
+    <linearGradient id="sig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fb2ff"/>
+      <stop offset="1" stop-color="#3d6bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="123" fill="url(#tile-bg)"/>
+  <g transform="translate(92 92) scale(5.125)">
+    <path d="M12 52 L32 12 L52 52" fill="none" stroke="#eaf1ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 38 H29 l3 -5 l3 10 l3 -5 H43" fill="none" stroke="url(#sig)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="12" r="4.5" fill="#7fb2ff"/>
+  </g>
+</svg>

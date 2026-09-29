@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420">
+  <!-- znak Gaspol przerysowany jako SVG: zewnętrzny pierścień otwarty u góry + wewnętrzna „bańka” z szyjką; białe szczeliny między pionowymi kreskami -->
+  <path d="M128.0 58 L128.0 120.4 A145 145 0 1 0 292.0 120.4 L292.0 58" fill="none" stroke="#e30613" stroke-width="38"/>
+  <path d="M183.0 58 L183.0 171.1 A74 74 0 1 0 237.0 171.1 L237.0 58" fill="none" stroke="#e30613" stroke-width="30"/>
+</svg>
