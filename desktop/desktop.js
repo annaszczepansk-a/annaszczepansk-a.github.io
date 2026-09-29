@@ -62,23 +62,27 @@
       id: 'canal', kind: 'app', label: 'CANAL+ Group', glyph: 'C+', bg: '#111b1f', fg: '#fff', tilt: 3, x: 23, y: 82,
       icon: 'assets/icon-canal.png', iconBleed: true,   // znak CANAL+ wycięty z planszy targowej Anny (30.09)
       heading: 'CANAL+ Group', meta: 'Eventy · Plakaty · Landing page · 2024–',
-      desc: 'Projekty dla kanałów grupy CANAL+ — ścianka na targi MIPCOM, plakaty FilmBox+ na NEM i landing page programu Zoom TV.',
+      desc: 'Projekty dla kanałów grupy CANAL+ — kampania i strony Zoom TV, ścianka na targi MIPCOM i plakaty FilmBox+ na NEM.',
       facts: [['Zakres', 'Eventy · Plakaty · Landing page'], ['Rola', 'Graphic Designer (etat)'], ['Klient', 'Kino Polska TV (CANAL+ Group)'], ['Rok', '2024 – obecnie']],
       full: true,
       blocks: [
-        { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — ścianka na targi MIPCOM: seriale międzynarodowe i kanały FilmBox+' },
-        { type: 'step', n: '', title: 'Ścianka na MIPCOM', paras: ['Ścianka na stoisko CANAL+ podczas międzynarodowych targów telewizyjnych MIPCOM w Cannes: seriale z dystrybucji i rodzina kanałów FilmBox+, z kodami QR do katalogu. Dwa ciemne pola to miejsca na telewizory, na których podczas targów leciały zwiastuny.'] },
+        { type: 'image', src: P + 'canal-zoom-kv.jpg', ratio: '2000 / 1117', alt: 'Zoom TV — key visual kampanii „Temperatura rozrywki rośnie”: para przed telewizorem i programy kanału' },
         { type: 'text', label: 'Kontekst', paras: [
           'Od 2024 roku pracuję jako Graphic Designer w Kino Polska TV, które weszło do grupy CANAL+. Projektuję dla całej rodziny kanałów: kampanie, key visuale, materiały do social mediów i strony programów.',
           'To praca w cudzej, rozbudowanej identyfikacji — każdy kanał ma swój kolor i charakter, a wszystko musi spinać się w jeden system.'
         ] },
+        { type: 'step', n: '', title: 'Ścianka na MIPCOM', paras: ['Ścianka na stoisko CANAL+ podczas międzynarodowych targów telewizyjnych MIPCOM w Cannes: seriale z dystrybucji i rodzina kanałów FilmBox+, z kodami QR do katalogu. Dwa ciemne pola to miejsca na telewizory, na których podczas targów leciały zwiastuny.'] },
+        { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — ścianka na targi MIPCOM: seriale międzynarodowe i kanały FilmBox+' },
         { type: 'step', n: '', title: 'Plakaty FilmBox+ na NEM', paras: ['Seria plakatów „For every mood” na targi NEM: każdy kanał FilmBox+ ma własny kolor, a wspólna ukośna linia prowadzi przez całą serię.'] },
         { type: 'duo', ratio: '1082 / 1512', items: [
           { src: P + 'canal-filmbox-plakat.jpg', alt: 'Plakat FilmBox+ „For every mood” — Ride On, Blitz, The Words w kolorach kanałów' },
           { src: P + 'canal-filmbox-stream.jpg', alt: 'Plakat FilmBox+ stream — serwis na telewizorze, laptopie i telefonie' }
         ] },
-        { type: 'step', n: '', title: 'Landing page dla Zoom TV', paras: ['Landing page programu „Magia nagości. Polska” dla Zoom TV: kampanijny hero, podcasty, opis programu i prowadząca w neonowej identyfikacji kanału.'] },
-        { type: 'scrollshot', src: P + 'canal-zoom-full.jpg', width: 598, alt: 'Zoom TV — landing page programu „Magia nagości. Polska, sezon 5” (cała strona)' },
+        { type: 'step', n: '', title: 'Strony Zoom TV', paras: ['Strona główna kanału i landing page programu „Magia nagości. Polska” — ten sam neonowy system co w kampanii: limonkowe kształty z logo, granat i zaokrąglone kadry.'] },
+        { type: 'scrollshot', items: [
+          { src: P + 'canal-zoom-home.jpg', width: 637, alt: 'Zoom TV — strona główna kanału (cała strona)' },
+          { src: P + 'canal-zoom-full.jpg', width: 598, alt: 'Zoom TV — landing page programu „Magia nagości. Polska, sezon 5” (cała strona)' }
+        ] },
         { type: 'text', label: 'Efekt', paras: [
           'Praca dla dużej grupy medialnej: wiele marek naraz, międzynarodowe targi i spójność w każdym formacie — od ścianki na stoisko po landing page. Najbardziej rozbudowany projekt z tej pracy to strona FilmBox+.'
         ] },
@@ -86,7 +90,7 @@
         { type: 'cta', heading: 'Zaprojektujmy coś razem.', text: 'Projektuję produkty cyfrowe, marki i ilustracje — od pierwszego szkicu po gotowy ekran, opakowanie czy kampanię. Szukam miejsca w zespole produktowym albo w agencji kreatywnej.', open: 'kontakt', label: 'Napisz do mnie →' }
       ],
       tags: ['Eventy', 'Plakaty', 'Landing page', 'Key visual'],
-      thumb: P + 'canal-filmbox-stream.jpg'
+      thumb: P + 'canal-zoom-kv.jpg'
     },
     {
       id: 'axon', kind: 'app', label: 'Axon', glyph: 'A', bg: '#0b0b0f', fg: '#eaf1ff', tilt: 4, x: 9, y: 44,
@@ -877,9 +881,13 @@
       case 'poses':
         // Luna: pozy w stylu sygnetu (linia + różowa kropka-głowa) — SVG z assets/projects/luna-pozy/
         return `<ul class="block poses">${b.items.map(([f, t]) => `<li><img src="${P}luna-pozy/luna-poza-${f}.svg" alt="Piktogram Luna — ${esc(t)}" loading="lazy"><span>${esc(t)}</span></li>`).join('')}</ul>`;
-      case 'scrollshot':
-        // cała strona www w ramce: przewija się sama po najechaniu (desktop), palcem na telefonie; bez powiększania ponad natywną szerokość
-        return `<div class="block ss"><div class="ss__frame" tabindex="0" style="max-width:${b.width || 600}px" aria-label="${esc(b.alt)} — przewiń, aby zobaczyć całą stronę"><img src="${b.src}" alt="${esc(b.alt)}" loading="lazy"></div><p class="ss__hint mono">Najedź, żeby przewinąć stronę</p></div>`;
+      case 'scrollshot': {
+        // cała strona www w ramce: przewija się sama po najechaniu (desktop), palcem na telefonie; bez powiększania ponad natywną szerokość.
+        // `items` = kilka stron obok siebie
+        const fr = it => `<div class="ss__frame" tabindex="0" style="max-width:${it.width || 600}px" aria-label="${esc(it.alt)} — przewiń, aby zobaczyć całą stronę"><img src="${it.src}" alt="${esc(it.alt)}" loading="lazy"></div>`;
+        const list = b.items || [b];
+        return `<div class="block ss"><div class="ss__row${list.length > 1 ? ' ss__row--2' : ''}">${list.map(fr).join('')}</div><p class="ss__hint mono">Najedź, żeby przewinąć stronę</p></div>`;
+      }
       case 'lunasys': {
         // Luna: paleta i elementy graficzne złożone w kodzie wg planszy PP Mori (wycinek miał podpisy ~6 px)
         const pal = [['Dusty blue', '#6B8BBE'], ['Blush pink', '#E7A7B1'], ['Nude', '#F3E6E1'], ['Sand', '#C9BCAE'], ['Ink', '#1E1E26']];
