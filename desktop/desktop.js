@@ -61,30 +61,31 @@
     {
       id: 'canal', kind: 'app', label: 'CANAL+ Group', glyph: 'C+', bg: '#111b1f', fg: '#fff', tilt: 3, x: 23, y: 82,
       icon: 'assets/icon-canal.png', iconBleed: true,   // znak CANAL+ wycięty z planszy targowej Anny (30.09)
-      heading: 'CANAL+ Group', meta: 'Kampanie · Social media · Strony www · 2024–',
-      desc: 'Grafiki, kampanie i strony dla kanałów grupy CANAL+ — FilmBox+, Zoom TV i materiały na targi branżowe.',
-      facts: [['Zakres', 'Kampanie · Key visual · Strony www'], ['Rola', 'Graphic Designer (etat)'], ['Klient', 'Kino Polska TV (CANAL+ Group)'], ['Rok', '2024 – obecnie']],
+      heading: 'CANAL+ Group', meta: 'Eventy · Plakaty · Landing page · 2024–',
+      desc: 'Projekty dla kanałów grupy CANAL+ — ścianka na targi MIPCOM, plakaty FilmBox+ na NEM i landing page programu Zoom TV.',
+      facts: [['Zakres', 'Eventy · Plakaty · Landing page'], ['Rola', 'Graphic Designer (etat)'], ['Klient', 'Kino Polska TV (CANAL+ Group)'], ['Rok', '2024 – obecnie']],
       full: true,
       blocks: [
-        { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — plansza na targi: seriale międzynarodowe i kanały FilmBox+' },
+        { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — ścianka na targi MIPCOM: seriale międzynarodowe i kanały FilmBox+' },
+        { type: 'step', n: '', title: 'Ścianka na MIPCOM', paras: ['Ścianka na stoisko CANAL+ podczas międzynarodowych targów telewizyjnych MIPCOM w Cannes: seriale z dystrybucji i rodzina kanałów FilmBox+, z kodami QR do katalogu.'] },
         { type: 'text', label: 'Kontekst', paras: [
           'Od 2024 roku pracuję jako Graphic Designer w Kino Polska TV, które weszło do grupy CANAL+. Projektuję dla całej rodziny kanałów: kampanie, key visuale, materiały do social mediów i strony programów.',
           'To praca w cudzej, rozbudowanej identyfikacji — każdy kanał ma swój kolor i charakter, a wszystko musi spinać się w jeden system.'
         ] },
-        { type: 'step', n: '', title: 'FilmBox+ — For every mood', paras: ['Plakaty dla rodziny kanałów FilmBox+: każdy kanał ma własny kolor, a wspólna ukośna linia prowadzi przez całą serię.'] },
+        { type: 'step', n: '', title: 'Plakaty FilmBox+ na NEM', paras: ['Seria plakatów „For every mood” na targi NEM: każdy kanał FilmBox+ ma własny kolor, a wspólna ukośna linia prowadzi przez całą serię.'] },
         { type: 'duo', ratio: '1082 / 1512', items: [
           { src: P + 'canal-filmbox-plakat.jpg', alt: 'Plakat FilmBox+ „For every mood” — Ride On, Blitz, The Words w kolorach kanałów' },
           { src: P + 'canal-filmbox-stream.jpg', alt: 'Plakat FilmBox+ stream — serwis na telewizorze, laptopie i telefonie' }
         ] },
-        { type: 'step', n: '', title: 'Zoom TV — strona programu', paras: ['Podstrona „Magia nagości. Polska” dla Zoom TV: kampanijny hero, podcasty, opis programu i prowadząca w neonowej identyfikacji kanału.'] },
-        { type: 'image', src: P + 'canal-zoom.jpg', ratio: '598 / 1130', mid: true, alt: 'Zoom TV — strona programu „Magia nagości. Polska, sezon 5”' },
+        { type: 'step', n: '', title: 'Landing page dla Zoom TV', paras: ['Landing page programu „Magia nagości. Polska” dla Zoom TV: kampanijny hero, podcasty, opis programu i prowadząca w neonowej identyfikacji kanału.'] },
+        { type: 'image', src: P + 'canal-zoom.jpg', ratio: '598 / 1130', mid: true, alt: 'Zoom TV — landing page programu „Magia nagości. Polska, sezon 5”' },
         { type: 'text', label: 'Efekt', paras: [
-          'Codzienna praca dla dużej grupy medialnej: szybkie terminy, wiele marek naraz i spójność w każdym formacie — od plakatu na targi po stronę programu. Najbardziej rozbudowany projekt z tej pracy to strona FilmBox+.'
+          'Praca dla dużej grupy medialnej: wiele marek naraz, międzynarodowe targi i spójność w każdym formacie — od ścianki na stoisko po landing page. Najbardziej rozbudowany projekt z tej pracy to strona FilmBox+.'
         ] },
         { type: 'more', ids: ['filmbox', 'gaspol', 'sona'] },
         { type: 'cta', heading: 'Zaprojektujmy coś razem.', text: 'Projektuję produkty cyfrowe, marki i ilustracje — od pierwszego szkicu po gotowy ekran, opakowanie czy kampanię. Szukam miejsca w zespole produktowym albo w agencji kreatywnej.', open: 'kontakt', label: 'Napisz do mnie →' }
       ],
-      tags: ['Kampanie', 'Key visual', 'Social media', 'Strony www'],
+      tags: ['Eventy', 'Plakaty', 'Landing page', 'Key visual'],
       thumb: P + 'canal-filmbox-stream.jpg'
     },
     {
