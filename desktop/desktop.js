@@ -59,6 +59,35 @@
       extUrl: 'https://filmboxplus.eu/pl/', extLabel: 'Zobacz stronę na żywo ↗'
     },
     {
+      id: 'canal', kind: 'app', label: 'CANAL+ Group', glyph: 'C+', bg: '#111b1f', fg: '#fff', tilt: 3, x: 23, y: 82,
+      icon: 'assets/icon-canal.png', iconBleed: true,   // znak CANAL+ wycięty z planszy targowej Anny (30.09)
+      heading: 'CANAL+ Group', meta: 'Kampanie · Social media · Strony www · 2024–',
+      desc: 'Grafiki, kampanie i strony dla kanałów grupy CANAL+ — FilmBox+, Zoom TV i materiały na targi branżowe.',
+      facts: [['Zakres', 'Kampanie · Key visual · Strony www'], ['Rola', 'Graphic Designer (etat)'], ['Klient', 'Kino Polska TV (CANAL+ Group)'], ['Rok', '2024 – obecnie']],
+      full: true,
+      blocks: [
+        { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — plansza na targi: seriale międzynarodowe i kanały FilmBox+' },
+        { type: 'text', label: 'Kontekst', paras: [
+          'Od 2024 roku pracuję jako Graphic Designer w Kino Polska TV, które weszło do grupy CANAL+. Projektuję dla całej rodziny kanałów: kampanie, key visuale, materiały do social mediów i strony programów.',
+          'To praca w cudzej, rozbudowanej identyfikacji — każdy kanał ma swój kolor i charakter, a wszystko musi spinać się w jeden system.'
+        ] },
+        { type: 'step', n: '', title: 'FilmBox+ — For every mood', paras: ['Plakaty dla rodziny kanałów FilmBox+: każdy kanał ma własny kolor, a wspólna ukośna linia prowadzi przez całą serię.'] },
+        { type: 'duo', ratio: '1082 / 1512', items: [
+          { src: P + 'canal-filmbox-plakat.jpg', alt: 'Plakat FilmBox+ „For every mood” — Ride On, Blitz, The Words w kolorach kanałów' },
+          { src: P + 'canal-filmbox-stream.jpg', alt: 'Plakat FilmBox+ stream — serwis na telewizorze, laptopie i telefonie' }
+        ] },
+        { type: 'step', n: '', title: 'Zoom TV — strona programu', paras: ['Podstrona „Magia nagości. Polska” dla Zoom TV: kampanijny hero, podcasty, opis programu i prowadząca w neonowej identyfikacji kanału.'] },
+        { type: 'image', src: P + 'canal-zoom.jpg', ratio: '598 / 1130', mid: true, alt: 'Zoom TV — strona programu „Magia nagości. Polska, sezon 5”' },
+        { type: 'text', label: 'Efekt', paras: [
+          'Codzienna praca dla dużej grupy medialnej: szybkie terminy, wiele marek naraz i spójność w każdym formacie — od plakatu na targi po stronę programu. Najbardziej rozbudowany projekt z tej pracy to strona FilmBox+.'
+        ] },
+        { type: 'more', ids: ['filmbox', 'gaspol', 'sona'] },
+        { type: 'cta', heading: 'Zaprojektujmy coś razem.', text: 'Projektuję produkty cyfrowe, marki i ilustracje — od pierwszego szkicu po gotowy ekran, opakowanie czy kampanię. Szukam miejsca w zespole produktowym albo w agencji kreatywnej.', open: 'kontakt', label: 'Napisz do mnie →' }
+      ],
+      tags: ['Kampanie', 'Key visual', 'Social media', 'Strony www'],
+      thumb: P + 'canal-filmbox-stream.jpg'
+    },
+    {
       id: 'axon', kind: 'app', label: 'Axon', glyph: 'A', bg: '#0b0b0f', fg: '#eaf1ff', tilt: 4, x: 9, y: 44,
       icon: 'assets/icon-axon-mark.png',   // znak Axona (trójkąt z gwiazdką) — wycięty ze zrzutu logo od Anny, czarne tło zamienione na przezroczyste;
       //                                     kafel czarny, bo znak był prezentowany na czerni. Poprzednie: icon-axon.svg („Sygnał”) — zostaje na dysku
@@ -571,7 +600,7 @@
       desc: 'Od wizualizacji 3D, przez grafikę i interfejsy, po prototypy.',
       // oś czasu wg CV 2025 (~/Desktop/_Inne/100 lecie gdyni/CVAnnaSzczepańska.pdf)
       blocks: [{ type: 'timeline', items: [
-        ['2024 – obecnie', 'work', 'Graphic Designer', 'Kino Polska TV (CANAL+ Group) · Warszawa', 'Grafiki i animacje do social mediów, kampanie reklamowe i koncepcje wizualne, rozwijanie identyfikacji marki — m.in. strona FilmBox+.', 'filmbox'],
+        ['2024 – obecnie', 'work', 'Graphic Designer', 'Kino Polska TV (CANAL+ Group) · Warszawa', 'Grafiki i animacje do social mediów, kampanie reklamowe i koncepcje wizualne, rozwijanie identyfikacji marki — m.in. strona FilmBox+.', 'canal'],
         ['2024', 'work', 'Graphic User Interface Designer', 'ElectroMobility Poland (Izera) · Warszawa', 'Interaktywny prototyp systemu HMI zgodnie z wytycznymi i testy prototypu — funkcjonalność i spójność interfejsu.', 'axon'],
         ['2020–2023', 'work', 'Grafik', 'Gaspol S.A. · Warszawa', 'Interfejsy użytkownika, wizualizacje 3D i infografiki, strony internetowe w Sitecore.', 'gaspol'],
         ['2018–2021', 'edu', 'Licencjat — Sztuka Nowych Mediów', 'Polsko-Japońska Akademia Technik Komputerowych · Warszawa', ''],
