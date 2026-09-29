@@ -67,7 +67,7 @@
       full: true,
       blocks: [
         { type: 'image', src: P + 'canal-targi.jpg', ratio: '1904 / 1306', alt: 'CANAL+ — ścianka na targi MIPCOM: seriale międzynarodowe i kanały FilmBox+' },
-        { type: 'step', n: '', title: 'Ścianka na MIPCOM', paras: ['Ścianka na stoisko CANAL+ podczas międzynarodowych targów telewizyjnych MIPCOM w Cannes: seriale z dystrybucji i rodzina kanałów FilmBox+, z kodami QR do katalogu.'] },
+        { type: 'step', n: '', title: 'Ścianka na MIPCOM', paras: ['Ścianka na stoisko CANAL+ podczas międzynarodowych targów telewizyjnych MIPCOM w Cannes: seriale z dystrybucji i rodzina kanałów FilmBox+, z kodami QR do katalogu. Dwa ciemne pola to miejsca na telewizory, na których podczas targów leciały zwiastuny.'] },
         { type: 'text', label: 'Kontekst', paras: [
           'Od 2024 roku pracuję jako Graphic Designer w Kino Polska TV, które weszło do grupy CANAL+. Projektuję dla całej rodziny kanałów: kampanie, key visuale, materiały do social mediów i strony programów.',
           'To praca w cudzej, rozbudowanej identyfikacji — każdy kanał ma swój kolor i charakter, a wszystko musi spinać się w jeden system.'
