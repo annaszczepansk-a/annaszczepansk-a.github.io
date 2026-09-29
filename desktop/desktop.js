@@ -896,7 +896,7 @@
     const contact = d.email ? `<div class="block"><a class="big-link" href="mailto:${d.email}">${esc(d.email)}</a>
       <div class="copy-row"><button class="btn btn--ghost" type="button" data-copy="${d.email}">Kopiuj e-mail</button></div></div>` +
       (d.phone ? `<div class="block"><a class="big-link" href="tel:+48${d.phone.replace(/\s/g, '')}">+48 ${esc(d.phone)}</a></div>` : '') +
-      (d.links || []).map(l => `<a class="btn btn--ghost" href="${l.url}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(' ') : '';
+      (d.links || []).map(l => `<a class="btn btn--ghost" href="${l.url}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(' ') : '';
     const tags = d.tags && d.tags.length ? `<div class="tags">${d.tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : '';
     const actions = [
       d.caseUrl && `<a class="btn" href="${d.caseUrl}">Zobacz pełne case study →</a>`,
