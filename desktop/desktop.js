@@ -108,9 +108,9 @@
       thumb: P + 'hmi-cockpit-v2.jpg'
     },
     {
-      id: 'sona', kind: 'app', label: 'sona', glyph: 'so', bg: '#16161a', fg: '#fff', tilt: -4, x: 22, y: 30,
+      id: 'sona', kind: 'app', label: 'Sona', glyph: 'so', bg: '#16161a', fg: '#fff', tilt: -4, x: 22, y: 30,
       icon: 'assets/icon-sona.svg', iconBleed: true,   // pełny logotyp „sona” z pomarańczowym „o” (prośba Anny; glyph 'so' zostaje jako zapas)
-      heading: 'sona', meta: 'Produkt · Web app & AI · 2026',
+      heading: 'Sona', meta: 'Produkt · Web app & AI · 2026',
       desc: 'Prywatny dziennik, w którym dzień jest jednostką wszystkiego — jednej notatki, jednego nastroju i jednej rozmowy.',
       facts: [['Zakres', 'Produkt · UX/UI · Wdrożenie'], ['Rola', 'Product & UX/UI designer'], ['Klient', 'Projekt autorski · kurs Nueve'], ['Rok', '2026']],
       // pełne case study w oknie — kolejność grafik 1:1 z ../sona.html, teksty SKRÓCONE (Anna: za dużo tekstu; pełne w sona.html)
